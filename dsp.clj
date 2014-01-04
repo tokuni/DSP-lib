@@ -32,4 +32,12 @@
       (bin-data data nil 0) )))
 
 
-
+(def plot-data []
+  (let [解析データ]
+    (doto 
+      (view (xy-plot x (count x)))
+      (scatter-plot x y)
+       view
+      (add-lines x (:fitted lm))；最小二条
+      
+)))
